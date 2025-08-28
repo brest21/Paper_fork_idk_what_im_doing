@@ -1,42 +1,11 @@
-# PaperAccurateBlockPlacement
+# PaperAccurateBlockPlacement ANOTHER FORK
 
-> A maintained fork of [DungeonDev's SpigotAccurateBlockPlacement](https://github.com/DungeonDev/SpigotAccurateBlockPlacement)
 
-## Original Credit
-Original implementation by DungeonDev. This fork maintains compatibility while adding support for newer Minecraft versions. 
+I forked this from this guy's fork - https://github.com/hxrry27/PaperAccurateBlockPlacement -
 
-## Plugin Features
-Implements Carpet's Accurate Block Placement Protocol for Paper/Pupur-based servers.
-Similarly adds support for FlexibleBlockPlacement from Tweakeroo and easyPlace from Litematica. Never place pistons, observers, or stairs wrong again!
+Used github actions to build it because I'm an idiot and it didn't work building it on my pc. Check the Actions latest run for the plugin if you want to download it. 
 
-## Version Compatibility
-- **Minecraft**: 1.21.7
-- **Server Software**: Paper/Pupur
-- **ProtocolLib**: 5.4.0 or higher
-
-## Installation
-
-### Prerequisites
-1. **Java 21** or higher installed
-2. **ProtocolLib 5.4.0** or higher
-
-### Building the Plugin
-```
-./gradlew clean build
-```
-
-The compiled JAR will be in `build/libs/`
-
-## Configuration advice for Clients
-
-### For Litematica
-1. Set `easyPlaceProtocolVersion` to **"Version 2"**
-2. Enable easyPlace mode
-3. Build with easyPlace like normal
-
-### For Tweakeroo
-1. Set `carpetAccuratePlacementProtocol` to **"true"**
-2. Enable and use Flexible Block Placement
+Works and am running currently on Purpur 1.21.8-2491 & the latest version of litematica for 1.21.8
 
 ## License
-The original project had no license. This fork's modifications are released under MIT License for the community benefit.
+The original project had no license. This fork's modifications of this other fork are released under MIT License for the community benefit.
