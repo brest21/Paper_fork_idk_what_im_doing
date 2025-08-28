@@ -1,0 +1,29 @@
+name: Build Paper Plugin
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Build with Gradle
+        run: ./gradlew build -Dorg.gradle.jvmargs="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED"
+
+      - name: Upload built JAR
+        uses: actions/upload-artifact@v3
+        with:
+          name: PaperAccurateBlockPlacement
+          path: build/libs/*.jar
