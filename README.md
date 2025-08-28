@@ -1,4 +1,4 @@
-# PaperAccurateBlockPlacement ANOTHER FORK
+# PaperAccurateBlockPlacement - fork of a fork. Call it a spoon.
 
 
 I forked this from this guy's fork - https://github.com/hxrry27/PaperAccurateBlockPlacement -
